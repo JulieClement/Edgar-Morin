@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Edgar Morin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+       body {
+            background-color: #fdfdfd;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .header {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #accueil {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        .subsection-title {
+            font-weight: 700;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 2px solid #000000;
+        }
+
+        .accueil-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: #ffefd5;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #accueil {
+                padding: 15px;
+            }
+        }
+
+        .accueil-text .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .accueil-text .photo img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        
+        }
+
+        .accueil-text .photo img:hover {
+            transform: scale(1.05);
+        }
+
+        .accueil-text .citation {
+            text-align: center;
+            font-size: 1.2em;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #0f0e0e;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation pour retourner à la page d'accueil -->
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Retour à la page principale</a></li>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#oeuvre">Son œuvre</a></li>
+                <li><a href="#travaux">Travaux et publications</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil avec le texte -->
+    <section id="accueil">
+        <div class="accueil-text">
+            <h2 class="section-title">Introduction</h2>
+            <p>
+                <div class="photo">
+                    <img src="Capture d’écran 2024-12-21 à 21.51.43.png" alt="Photo d'Edgar Morin">
+                </div>
+            </p>
+           
+            <p class="citation">
+                « La pensée est le capital le plus précieux pour l'individu et la société »
+            </p>
+            <p>
+                Edgar Morin, de son vrai nom Edgar Nahoum, est un sociologue et philosophe français, né en 1921. 
+                Marqué par l'expérience de la Résistance, il a développé une pensée complexe qui intègre les dimensions sociales, politiques, économiques et culturelles.
+            </p>
+            <p>
+                "La Méthode", son œuvre majeure en six volumes, est une méthodologie de la transdisciplinarité, une référence incontournable pour ceux qui s'intéressent aux défis contemporains. 
+                Son engagement dans des initiatives internationales, ainsi que son appel à une intégration des dimensions écologiques, sociales, économiques et culturelles, témoignent de sa volonté de contribuer à un monde plus juste.
+            </p>
+             <!-- Crédit en bas à gauche -->
+    <div class="credit">
+        Crédit : Pycril - Domaine public
+    </div>
+      
+    </section>
+
+</body>
+</html>
+
+

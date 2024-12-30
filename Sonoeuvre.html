@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Edgar Morin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #fdfdfd;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .header {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #accueil {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        .subsection-title {
+            font-weight: 700;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 2px solid #000000;
+        }
+
+        .accueil-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: #fafafa;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #accueil {
+                padding: 15px;
+            }
+        }
+
+        .highlight {
+            font-style: italic;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .accueil-text .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .accueil-text .photo img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        
+        }
+
+        .accueil-text .photo img:hover {
+            transform: scale(1.05);
+        }
+
+
+        .accueil-text .citation {
+            text-align: center;
+            font-size: 1.2em;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #0f0e0e;
+            margin: 30px 0;
+        }
+    </style>
+    <script>
+        function showTooltip(event, definition) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.left = `${event.pageX + 10}px`;
+            tooltip.style.top = `${event.pageY + 10}px`;
+            tooltip.innerHTML = definition;
+            tooltip.style.display = 'block';
+        }
+
+        function hideTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+
+    <!-- Barre de navigation pour retourner à la page d'accueil -->
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="index.html">Retour à la page principale</a></li>
+                <li><a href="#travaux">Travaux et publications</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil avec le texte -->
+    <section id="accueil">
+        <div class="accueil-text">
+            <h2 class="section-title">L'œuvre d'une vie</h2>
+          
+            <p class="citation">
+                « Une société s'autoproduit sans cesse parce qu'elle s'autodétruit sans cesse »
+          
+                <div class="photo">
+                    <img src="Edgar Morin photo site 3.jpg" alt="Photo d'Edgar Morin">
+                </div>
+
+            <h3 class="subsection-title">Contributions majeures au domaine de l'Information</h3>
+           
+           
+            <p>
+                Edgar Morin est considéré comme un acteur important des sciences de l'information en raison de ses contributions interdisciplinaires qui croisent la philosophie, la sociologie, et la théorie de la connaissance. 
+            </p>   
+            <h3 class="subsection-title">Le Paradigme perdu</h3>
+
+               
+                En septembre 1972, Edgar Morin, en collaboration avec Jacques Monod et Massimo Piatelli-Palmarini, organise un colloque international au CIEBAF, devenu depuis le Centre Royaumont, consacré à l'étude de "L'Unité de l'Homme". Biologistes, anthropologues, sociologues, mathématiciens et autres spécialistes ont été rassemblés, afin de favoriser les échanges entre leurs disciplines respectives et de tenter de rapprocher leurs points de vue potentiellement différents.
+                <p>
+                    Les idées échangées lors du colloque de 1972 seront approfondies par Edgar Morin dans son ouvrage "Le Paradigme perdu : la nature humaine". Cet ouvrage explore la complexité de la condition humaine en soulignant l’indissociabilité entre les dimensions biologiques et culturelles, qu'il décrit comme une “boucle récursive permanente”.
+                </p>
+                
+                <h3 class="subsection-title">La pensée complexe</h3>
+                Le concept de complexité, introduit pour la première fois dans "Science avec conscience" (1982), a évolué à partir de l'étymologie du mot "complexus" qui évoque un tissage complexe. Cette notion, inspirée des travaux de W. Ross Ashby, invite à une pensée acceptant les imbrications de chaque domaine de la pensée et la transdisciplinarité
+                
+                
+                <h3 class="subsection-title">La Méthode</h3>
+                <p>
+                    La Méthode, l'œuvre majeure d'Edgar Morin est une production singulière, structurée en six volumes indépendants mais interconnectés. Dans cette encyclopédie, l'auteur développe une pensée complexe, en revenant cycliquement sur certaines notions, les éclairant sous différents angles.
+                </p>
+                <p>
+                    La première partie de La Méthode, intitulée La Nature de la nature, explore les fondements du monde physique en s'intéressant aux notions d'ordre, de désordre, de système et d'information.
+                </p>
+                <p>
+                    Le deuxième tome, La Vie de la vie, s'attarde sur le vivant et les enjeux de la biologie.
+                </p>
+                <p>
+                </p>
+                <p>
+                    Le troisième, La Connaissance de la connaissance, adopte une perspective anthropologique pour questionner la nature et les limites de notre savoir, jetant ainsi les bases d'une <span class="highlight" onmouseover="showTooltip(event, 'Étude critique des sciences, destinée à déterminer leur origine logique, leur valeur et leur portée')" onmouseout="hideTooltip()">épistémologie</span>  complexe.
+                </p>
+                Le quatrième volume de La Méthode, intitulé Les Idées, occupe une place particulière dans l'œuvre d'Edgar Morin. Selon l'auteur, il pourrait tout aussi bien en être le premier tome, tant il constitue une introduction accessible à l'épistémologie complexe. Complétant le troisième volume, Les Idées aborde la connaissance sous deux angles : d'abord collectif et sociétal, en étudiant l'organisation des idées, puis individuel, en explorant la vie des idées, la <span class="highlight" onmouseover="showTooltip(event, 'Provient du mot noosphère, qui est l’espace composé de l’ensemble des consciences et des pensées humaines')" onmouseout="hideTooltip()">noologie</span>. Enfin, Morin applique sa méthode à des concepts fondamentaux de la philosophie comme le langage, la logique et le paradigme.
+                <p>
+                    Dans une note de lecture, Jean-Louis Le Moigne met en avant l'importance de la <span class="highlight" onmouseover="showTooltip(event, 'Selon Edgar Morin, le niveau qui contrôle tous les discours qui se font sous son emprise et qui oblige les discours à obéir')" onmouseout="hideTooltip()">paradigmatologie</span>, concept introduit par Edgar Morin dans le quatrième tome de La Méthode. Le Moigne met l’accent sur la fécondité de ce <span class="highlight" onmouseover="showTooltip(event, 'Mot nouveau ou sens nouveau')" onmouseout="hideTooltip()">néologisme</span> pour appréhender la complexité du monde sans recourir à d’importantes simplifications. Morin lui-même définit la paradigmatologie comme un "niveau de contrôle" des discours. 
+                </p>
+                
+                L'humain, dans sa triple dimension : individu, société, espèce, est au cœur du cinquième tome, appelé L'Humanité de l'humanité, L'Identité humaine. 
+                <p>
+                    Le sixième tome conclut La Méthode en explorant l'éthique, ses incertitudes et en plaidant pour une approche basée sur la compréhension.
+                </p>
+                
+                <h3 class="subsection-title">La pensée qui relie</h3>
+                <p>
+                    Edgar Morin prône une approche de la connaissance qui vise à "relier" les savoirs fragmentés en disciplines. Il souligne la nécessité de dépasser les frontières établies entre les différentes écoles de pensée et les domaines du savoir. Pour lui, il est essentiel d'envisager les phénomènes en combinant des approches apparemment contradictoires : confrontation, complémentarité, concurrence et coopération s'entremêlent dans une dynamique complexe.
+                </p>
+                Edgar Morin préconise une attitude d'ouverture, comparable à l'« esprit de la vallée » <span class="highlight" onmouseover="showTooltip(event, 'Un des trois piliers de la pensée chinoise avec le confucianisme et le bouddhisme. Il se fonde sur l\'existence d\'un principe à l’origine de toute chose, appelé « Tao »')" onmouseout="hideTooltip()">taoïste</span>. Cette métaphore évoque une pensée qui recueille les idées provenant de diverses sources, comme les eaux d'une vallée. Il a formalisé cette approche en sept principes complémentaires et interdépendants, guidant ainsi vers une pensée qui relie les savoirs fragmentés :
+                <p>
+                    <li>À l'opposé du réductionnisme, le principe systémique ou organisationnel souligne que les systèmes possèdent des propriétés émergentes nouvelles et imprévisibles, qui ne peuvent être réduites à la somme des propriétés de leurs composants. Comme « Le tout est moins que la somme des parties » les systèmes engendrent de nouvelles propriétés, mais peuvent en inhiber certaines de leurs composants.</li>
+                </p>
+                <p>
+                    <li>Le principe hologrammique formule que le tout est contenu dans chacune de ses parties. Ainsi, chaque cellule d'un organisme porte l'empreinte de l'organisme entier, de même que chaque individu d'une société porte en lui les éléments constitutifs de cette société, sa culture, sa langue, ses règles…</li>
+                </p>
+                <p>
+                    <li>Le principe de boucle rétroactive “l’effet agit sur la cause” est un concept fondamental en systémique, qui nous invite à penser les relations de cause à effet de manière dynamique et circulaire, plutôt que linéaire. À l’instar de l'<span class="highlight" onmouseover="showTooltip(event, 'Processus de régulation par lequel l\'organisme maintient les différentes constantes du milieu intérieur entre les limites des valeurs normales')" onmouseout="hideTooltip()">homéostasie</span> des organismes vivants.</li> 
+                </p>
+                <p>
+                    <li>Le principe de boucle récursive : dans une boucle récursive, les éléments sont à la fois produits et producteurs, de ce qui les produit. Les individus et la société s'accompagnent dans une dynamique de co-construction : les actions individuelles façonnent le tissu social, tandis que la société, à travers ses normes et ses valeurs, façonne les individus.</li>
+                </p>
+                <p>
+                    <li>Le principe d’auto-éco-organisation : les êtres vivants sont des systèmes dynamiques en constante auto-construction. Cette auto-production requiert un ensemble d'énergie puisée dans leur environnement, créant ainsi une interdépendance vitale entre l'organisme et son milieu.</li>
+                </p>
+                <p>
+                    <li>Le principe dialogique décrit une relation dynamique où deux forces opposées, sont liées et sont complémentaires. C’est en s’affrontant qu’elles se nourrissent l’une de l’autre. C'est comme un yin et un yang, où chaque élément a besoin de l'autre pour exister et se définir.</li>
+                </p>
+<p>
+    <li>Le principe de réintroduction du connaissant dans toute connaissance : Toute création humaine, qu'il s'agisse d'une machine, d'un processus ou d'une théorie, porte la marque de celui qui l'a conçue. Nos inventions sont le reflet de nos pensées, de nos valeurs et de notre culture.</li>
+</p>                
+                
+                
+                <h3 class="subsection-title">Engagements et prises de position</h3>
+               <p>
+                De son adhésion au Parti communiste français à sa critique des conceptions marxistes et socialistes traditionnelles, le parcours politique d'Edgar Morin est marqué par une évolution. De 1941 à 1951, il est entouré d’intellectuels tels que Georges Friedmann ou Jean-Paul Sartre, qu’il qualifie de “compagnons de route”. Sa rupture avec le PCF fut déchirante, et marqua un tournant dans son idéologie politique. Si ses premières années d'engagement étaient guidées par un idéal révolutionnaire, il s'est progressivement tourné vers une pensée plus complexe et nuancée, centrée sur les enjeux globaux de l'humanité.
+               </p> 
+               <p>
+                Selon Edgar Morin, le conflit israélo-palestinien a donné lieu à une complexification des rapports entre antisémitisme et anti-israélisme de 2018 à 2020. Il observe une recrudescence de l'antisémitisme classique, exacerbé par la montée de l'islamophobie, mais aussi l'émergence d'un nouvel anti-judaïsme lié à la politique d'Israël. Il dénonce par ailleurs l'instrumentalisation de l'accusation d'antisémitisme pour museler toute critique de la politique israélienne.
+               </p>
+                <p>
+                    Il contribue à la création du Collegium international d'éthique, de politique et de science en 2002, sous la présidence du président de la République slovène Milan Kučan. En 2011, il publie « Rendre la terre habitable » en coopération avec Peter Sloterdijk et contribue en 2012 au livre collectif « Le Monde n'a plus de temps à perdre » qui incite à une administration mondiale solidaire et responsable.
+                </p>
+                <p>
+                    D'après lui, la mondialisation nous place devant un choix capital : celui entre un avenir marqué par les catastrophes écologiques, sociales et politiques, et un avenir transhumaniste où la technologie serait au service d'une extension de la vie humaine, au détriment de notre humanité. Il met en garde contre les dangers d'une vision trop optimiste de la technologie, qui pourrait conduire à une aliénation de l'homme.
+                </p>
+                <p>
+                    Aux côtés de figures emblématiques telles que Stéphane Hessel et Michel Rocard, Edgar Morin a participé à la création du Collectif Roosevelt en mars 2012. Ce collectif, réunissant de nombreux intellectuels et personnalités engagées, a pour ambition de proposer des solutions innovantes pour sortir de la crise économique et construire une société plus juste et créer une Europe démocratique.
+                </p>
+                <p>
+                    Il apporte un soutien officiel au chef Raoni dans sa lutte contre le barrage de Belo Monte en 2013. Ce dernier, ainsi que de nombreux autres intellectuels, juristes et politiques, contribuent à la création d'un tribunal moral pour les crimes contre la nature et le futur de l'humanité. En 2013, il participe à la tribune publiée par le mouvement End ecocide in Europe en faveur de l'initiative citoyenne européenne « Stop ecological genocide in Europe ». Il affirmera le pouvoir financier est responsable de la détérioration de l'environnement.
+                </p>
+                <p>
+                    Edgar Morin figure parmi les premiers signataires d'une pétition réclamant l'asile en France pour Edward Snowden et Julian Assange, deux lanceurs d'alerte ayant révélé des informations confidentielles sur les activités de surveillance de masse menées par les États-Unis. Suite à la lettre ouverte adressée par Julian Assange au président François Hollande, ces personnalités appellent la France à leur offrir une protection internationale.
+                </p>
+                En tant qu'incroyant radical, Edgar Morin ne croit pas en l'existence d'un dieu. Cependant, il exprime un intérêt marqué pour les dimensions spirituelles de l'existence. Il trouve dans le bouddhisme, une philosophie de vie qui prône la compassion, la méditation et le détachement, une source d'inspiration dans la construction d’une société. 
+                
+                <h3 class="subsection-title">Reconnaissance</h3>
+               <p>
+                Depuis sa retraite du CNRS en 1993, Edgar Morin, figure emblématique de la pensée contemporaine, a consacré une grande partie de son activité à la promotion de la pensée complexe. Fondateur et président de l'Association pour la pensée complexe en 1997, il a largement contribué à diffuser cette approche novatrice à travers le monde, notamment en Méditerranée, en Amérique latine et en Asie.
+                Edgar Morin, aux côtés de Michel Rocard et Stéphane Hessel, a été l'un des fondateurs du Collegium international éthique, politique et scientifique. Cette association, réunissant scientifiques, intellectuels et anciens dirigeants, a pour ambition de développer des réponses globales aux défis actuels. 
+            </p>
+                En hommage à sa longue et fructueuse carrière, le CECMAS, où Edgar Morin a œuvré pendant de nombreuses années, a été renommé « Centre Edgar Morin » en 2008. Cette reconnaissance institutionnelle s'est accompagnée d'un hommage cinématographique avec le documentaire « Edgar Morin, chronique d'un regard » en 2015. De plus, le 7 avril 2015, le lycée d'excellence de Douai a été rebaptisé en son honneur, témoignant ainsi de l'influence de sa pensée sur les nouvelles générations.
+                Voici une liste des décorations et prix qui lui ont été attribués :
+                <p>
+                Honneurs :
+            </p>
+                <li>Directeur de recherche émérite au Centre national de la recherche scientifique (CNRS)</li>
+                <li>Président du conseil scientifique de l'Institut des sciences de la communication du CNRS</li>
+                <li>Président de l'Agence européenne pour la culture (Unesco)</li>
+                <li>Président de l'Association pour la pensée complexe</li>
+                <li>Président de l'association La Voix du Net</li>
+                <li>Laus honoris causa de l'Institut Piaget au Portugal</li>
+                <li>Colegiado de Honor du Conseil de l'enseignement supérieur d'Andalousie (Espagne)</li>
+                <li>Membre de l'Académie de la Latinité (Rio de Janeiro)</li>
+                <li>Membre correspondant de l'Académie brésilienne des lettres</li>
+                <li>Membre du comité de parrainage de l'association Marianne de la diversité</li>
+                <li>Membre d'honneur du Club de Budapest</li>
+                
+                <p>
+                Décorations :
+            </p>
+                <li>Grand-croix de la Légion d'honneur en 2021</li>
+                
+                <li> Grand officier de l'ordre national du Mérite en 2012</li>
+                
+                <li>Commandeur de l'ordre des Arts et des Lettres</li>
+                
+                <li>Grand-croix de l'ordre de Sant'Iago de l'Épée (Portugal)</li>
+                
+                <li>Commandeur de l'ordre du Mérite Intellectuel (Maroc)</li>
+                
+                <li>Officier de l’ordre du Mérite civil (Espagne)</li>
+           
+                <p>
+                
+                Prix :
+            </p>
+<p>
+    <li> Ibn Khaldoun pour la promotion des études et des recherches en SHS, Tunisie (2015)</li> 
+    <li> Médaille de la Ville de Paris (2012)</li> 
+    <li> Prix du Bertalanffy Center for the Study of Systems Science, Autriche (2012)</li> 
+    <li> Prix Averroès, Maroc (2009)</li> 
+    <li> Prix Nonino, Italie (2004)</li> 
+    <li> Premio internazionale Federico Nietzsche, Italie (2003)</li> 
+    <li> Prix Poetica do pensar, Portugal (2002)</li> 
+    <li> Médaille d’or du Centre Pio Manzu, Unesco (2001)</li> 
+    <li> Prix international de Catalogne, Espagne (1994)</li> 
+    <li> Prix Media (culture) de l'Association des journalistes européens (1992)</li> 
+    <li> Médaille de la Chambre des députés de la République italienne (1989)</li> 
+    <li> Prix Viareggio international, Italie (1989)</li> 
+    <li> Prix européen de l'essai Charles-Veillon (1987)</li> 
+    <li> Médaille d'or (Aristote d'or) de l'Unesco</li> 
+</p>
+               
+        </div>
+    </section>
+</div>
+</section>
+
+<div id="tooltip" class="tooltip"></div>
+
+</body>
+</html>

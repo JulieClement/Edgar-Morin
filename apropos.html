@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Edgar Morin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #fdfdfd;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .header {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #accueil {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        .subsection-title {
+            font-weight: 700;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 2px solid #000000;
+        }
+
+        .accueil-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: #ffefd5;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #accueil {
+                padding: 15px;
+            }
+        }
+
+        .contact-form {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .sources {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sources h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .sources ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .sources ul li {
+            display: inline-block;
+            background-color: white;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: black; /* Couleur du texte en noir */
+            font-family: 'Arial', sans-serif; /* Police fine et classique */
+            font-weight: 300; /* Police fine */
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .sources ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .sources ul li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Barre de navigation pour retourner à la page d'accueil -->
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#oeuvre">Son oeuvre</a></li>
+                <li><a href="#travaux">Travaux et publications</a></li>
+                <li><a href="index.html">Retour à la page principale</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil avec le texte -->
+    <section id="accueil">
+        <div class="accueil-text">
+            <h2 class="section-title">À propos...</h2>
+            <h3 class="subsection-title">Démarche de création</h3>
+            <p>
+                Étudiante en information-communication à l'IUT Bordeaux Montaigne, dans le cadre de mes études, j'ai été amenée à créer un site web dédié à un acteur majeur de l'architecture de l'information. N'étant pas une experte en codage, j'ai privilégié la qualité du contenu sur l'aspect technique. Ce site, consacré à Edgar Morin, a pour objectif de rendre accessible au plus grand nombre l'œuvre et la pensée de ce sociologue reconnu.
+            </p>
+            <p>
+                Je souhaitais que le design de ce site soit à l'image de l'homme concerné : Edgar Morin. Son approche intellectuelle, souvent complexe mais toujours élégante, m'a guidé dans le choix d'une interface sobre et classique. Les nombreux tutoriels disponibles en ligne m'ont permis d'acquérir les bases du codage. Cependant, face aux nombreuses difficultés techniques, l'intelligence artificielle s'est révélée être un outil précieux, afin de donner vie à ce projet.
+            </p>
+            <h3 class="subsection-title">Objectif(s) et cible(s) du site</h3>
+            <p>
+                Mon objectif principal est de sensibiliser un large public, notamment les étudiants, et toute personne curieuse de comprendre les enjeux sociologiques contemporains à travers l'œuvre de Morin. En regroupant une bibliographie complète et des analyses de ses œuvres, je vise à créer un espace où chacun peut explorer ses idées novatrices et leur pertinence dans notre société actuelle. De plus, j’inclue des liens vers des vidéos de ses interventions, permettant aux visiteurs de mieux comprendre non seulement ses pensées, mais aussi la personne qu'il était. Ces ressources audiovisuelles offrent une dimension vivante à son discours, rendant ses concepts plus accessibles. 
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Sources -->
+<section class="sources">
+    <h3>Sources</h3>
+    <ul>
+        <li><a href="https://fr.wikipedia.org/wiki/Edgar_Morin" target="_blank">Wikipedia</a></li>
+        <li><a href="https://www.babelio.com/auteur/Edgar-Morin/2686" target="_blank">Babelio</a></li>
+        <li><a href="https://www.lemonde.fr/signataires/edgar-morin/" target="_blank">Le Monde</a></li>
+        <li><a href="https://www.alsacreations.com/tuto/lire/1359-design-css-complet-5-etapes.html" target="_blank">Alsacréations</a></li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">MDN Web Docs</a></li>
+        <li><a  href="https://www.mollat.com/Recherche/Auteur/0-1285760/morin-edgar" target="_blank">Mollat</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
+
+    </section>
+
+   
+
+
+</body>
+</html>

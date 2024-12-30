@@ -1,0 +1,72 @@
+/* Réinitialisation de base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../Images/background.jpg'); /* Chemin mis à jour */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Effet de parallaxe */
+    color: white; /* Texte par défaut en blanc */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alignement à gauche */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le header */
+}
+
+.logo {
+    display: none; /* Suppression de la photo d'Edgar Morin */
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Navigation en ligne */
+    gap: 20px; /* Espace entre les éléments */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white; /* Texte des liens en blanc */
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #747580; /* Couleur dorée au survol */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    font-weight: 200; /* Poids très fin */
+    text-align: left;
+    padding: 20px 20px; /* Réduction du padding pour remonter le contenu */
+    background-color: rgb(255, 255, 255); /* Fond semi-transparent pour la landing page */
+}
+
+.big-title {
+    font-size: 2em;
+    margin-bottom: 10px; /* Réduction de la marge pour rapprocher le contenu */
+    margin-top: 20px; /* Ajustement pour remonter le titre */
+    color: white; /* Texte en blanc */
+}
+
+.scroll-down {
+    text-decoration: none;
+    color: white; /* Texte en blanc */
+    font-size: 0.8em; /* Réduction de la taille du texte */
+    position: absolute;
+    left: 10px; /* Décalage vers la gauche */
+    bottom: 20px; /* Position en bas */
+}
+
+.scroll-down:hover {
+    color: #FFD700; /* Couleur dorée au survol */
+}
+
+

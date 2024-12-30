@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Edgar Morin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      body {
+            background-color: #fdfdfd;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .header {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #accueil {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        .subsection-title {
+            font-weight: 700;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 2px solid #000000;
+        }
+
+        .accueil-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: #ffefd5;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #accueil {
+                padding: 15px;
+            }
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 20%;
+            flex-shrink: 0;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 100%;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .accueil-text .subsection-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: black; /* Couleur du texte en noir */
+            font-family: 'Arial', sans-serif; /* Police fine et classique */
+            font-weight: 300; /* Police fine */
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .accueil-text p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation pour retourner à la page d'accueil -->
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="oeuvre">Son oeuvre</a></li>
+                <li><a href="index.html">Retour à la page principale</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil avec le texte -->
+    <section id="accueil">
+        <div class="accueil-text">
+            <p>
+                <h2 class="section-title">Travaux & Publications</h2>
+                <h3 class="subsection-title">Livres et articles : 
+                </h3>
+               <p>
+                Les ouvrages d'Edgar Morin ont été traduits en vingt-huit langues et dans quarante-deux pays.
+
+               </p>
+        <!-- Carrousel de photos -->
+        <div class="carousel">
+            <div class="carousel-images" id="carousel-images">
+                <img src="Capture d’écran 2024-12-21 à 22.02.07.png" alt="Photo 1">
+                <img src="Capture d’écran 2024-12-21 à 22.00.58.png" alt="Photo 2">
+                <img src="Capture d’écran 2024-12-21 à 22.01.45.png" alt="Photo 3">
+                <img src="Capture d’écran 2024-12-21 à 22.04.10.png" alt="Photo 4">
+                <img src="Capture d’écran 2024-12-21 à 22.23.21.png" alt="Photo 3">
+                <img src="Capture d’écran 2024-12-21 à 22.22.53.png" alt="Photo 3">
+                <img src="Capture d’écran 2024-12-21 à 22.22.20.png" alt="Photo 3">
+                <img src="Capture d’écran 2024-12-21 à 22.19.53.png" alt="Photo 3">
+                <img src="Capture d’écran 2024-12-21 à 22.27.06.png" alt="Photo 3">
+                <img src="Capture d’écran 2024-12-21 à 22.19.17.png" alt="Photo 3">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+ 
+               <li>1946 : L'An zéro de l'Allemagne, Paris, Éditions de la Cité Universelle </li>
+               <li>1947 : Allemagne notre souci, Paris, Éditions Hier et Aujourd'hui</li>
+               <li>1948 : Une cornerie, Paris, Éditions Nagel</li>
+               <li>1948 : L'Homme et la Mort, Paris, Éditions Corrêa </li>
+               <li>1956 : Le Cinéma ou l'Homme imaginaire, Paris, Éditions de Minuit</li>
+               <li>1957 : Les Stars, Paris, Le Seuil ; réédition : Paris, Le Seuil, 1972</li>
+               <li>1959 : Autocritique, Paris, Le Seuil</li>
+               <li>1962 : L'esprit du temps. Essai sur la culture de masse, Paris, Grasset-Fasquelle71</li>
+               <li>1965 : Introduction à une politique de l'homme, Paris, Le Seuil72 ; réédition : Paris, Le Seuil, 1999</li>
+               <li>1967 : Commune en France. La métamorphose de Plodémet, Paris, Fayard73</li>
+               <li>1968 : Mai 68, La Brèche (avec Claude Lefort et Cornelius Castoriadis), Paris, Fayard</li>
+               <li>1969 : La Rumeur d'Orléans, Paris, Le Seuil</li>
+               <li>1969 : Le vif du sujet, Paris, Le Seuil</li>
+               <li>1970 : Journal de Californie, Paris, Le Seuil</li>
+               <li>1973 : Le Paradigme perdu : la nature humaine, Paris, Le Seuil74</li>
+               <li>1974 : L'unité de l'homme (avec Massimo Piattelli Palmarini), trois volumes, Paris, Le Seuil :</li>
+               <li>1975 : La bureaucratie (ouvrage collectif), Paris, Union générale d'éditions</li>
+               <li>1977-2004 : La Méthode, six volumes, Paris, Le Seuil :</li>
+               <li>1977 : La Nature de la nature, t. 1, Paris, Le Seuil, coll. « Points », 1977</li>
+               <li>1980 : La Vie de la vie, t. 2, Paris, Éditions du Seuil, coll. « Points », 1980, 482 p</li>
+               <li>1986 : La Connaissance de la connaissance, t. 3, Paris, Éditions du Seuil, coll. « Points », 1986, 255 p</li>
+               <li> 1991 : Les Idées : Leur habitat, leur vie, leurs mœurs, leur organisation, t. 4, Paris, Éditions du Seuil</li>
+                <li>2001 : L’Humanité de l’humanité : L’identité humaine, t. 5, Paris, Éditions du Seuil</li>
+                <li>2004 : Éthique, t. 6, Paris, Éditions du Seuil, coll. « Points », 2004, 288 p</li>
+                <li>1981 : Pour sortir du xxe siècle, Paris, Nathan</li>
+                <li>1982 : Science avec conscience, Paris, Fayard ; Prix Halphen de l'Académie française</li>
+                <li>1983 : De la nature de l’URSS, Paris, Fayard</li>
+                <li> 1984 : Sociologie, Paris, Fayard75</li>
+                <li> 1984 : Le Rose et le noir, Paris, Galilée</li>
+                <li> 1984 : New York : la ville des villes, Paris, Galilée</li>
+                <li> 1987 : Penser l'Europe, Paris, Gallimard, coll. Folio76</li>
+                <li> 1988 : Mais (avec Marek Halter), Paris, Édition Neo/Soco Invest</li>
+                <li> 1989 : Vidal et les siens, (avec Véronique Grappe-Nahoumet Haïm Vidal Séphiha), Paris, Le Seuil</li>
+                <li> 1990 : Introduction à la pensée complexe, Paris, ESF ; réédition : Paris, Le Seuil, 2005</li>
+                <li> 1991 : Un nouveau commencement (avec Bocchi Gianlucaet Mauro Ceruti), Paris, Le Seuil</li>
+                <li>1993 : Terre-Patrie (avec Anne-Brigitte Kern), Paris, Le Seuil77</li>
+                <li> 1994 : Mes démons, Paris, Stock ; réédition : Paris, Le Seuil, 1998</li>
+                <li> 1994 : La complexité humaine [sous la dir. de], Paris, Flammarion</li>
+                <li> 1995 : Les Fratricides : Yougoslavie-Bosnie (1991-1995), Paris, Arléa</li>
+                <li> 1995 : Une année sisyphe, Paris, Le Seuil</li>
+                <li> 1997 : Comprendre la complexité dans les organisations de soins, Paris, ASPEPS</li>
+                <li> 1997 : Une politique de civilisation (en collaboration avec Sami Naïr), Paris, Arléa</li>
+                <li> 1997 : Amour, Poésie, Sagesse, Paris, Le Seuil</li>
+                <li> 1998 : L'Intelligence de la complexité (avec Jean-Louis Le Moigne), Paris, L'Harmattan</li>
+                <li> 1999 : Relier les connaissances, Paris, Le Seuil</li>
+                <li> 1999 : Une tête bien faite : Repenser la réforme, réformer la pensée, Paris, Le Seuil78</li>
+                <li> 2000 : Sept savoirs nécessaires à l'éducation du futur, Paris, Le Seuil</li>
+                <li> 2000 : Dialogue sur la nature humaine (avec Boris Cyrulnik), Paris, L'Aube</li>
+                <li> 2000 : Nul ne connaît le jour qui naîtra, l'intégrale des entretiens Noms de Dieux d'Edmond Blattchen</li>
+                <li> 2001 : Journal de Plozévet, Bretagne, 1965, Paris, L'Aube</li>
+                <li> 2002 : Dialogue sur la connaissance. Entretiens avec des lycéens, Paris, La Tour d’Aigues</li>
+                <li> 2002 : Pour une politique de civilisation, Paris, Arléa</li>
+                <li> 2003 : La Violence du monde (avec Jean Baudrillard), Paris, Édition du Félin</li>
+                <li> 2003 : Éduquer pour l’ère planétaire, la pensée complexe... l’incertitude humaine, Paris, Balland</li>
+                <li> 2003 : Université, quel avenir ? (avec Alfredo Pena-Vega), Paris, Éditions Charles Léopold Mayer</li>
+                <li> 2003 : Les Enfants du ciel : entre vide, lumière, matière(avec Michel Cassé), Paris, Odile Jacob</li>
+                <li> 2004 : Pour entrer dans le xxie siècle, Paris, Le Seuil </li>
+                <li> 2005 : Culture et Barbarie européennes, Paris, Bayard</li>
+                <li> 2006 : Pour un nouvel imaginaire politique (avec Mireille Delmas-Marty et René Passet), Paris, Fayard</li>
+                <li> 2006 : Itinérance (entretien avec Marie-Christine Navarro), Paris, Arléa</li>
+                <li> 2006 : Le Monde moderne et la question juive, Paris, Le Seuil ; réédition : Paris, Le Seuil, 2012</li>
+                <li> 2007 : L'An I de l'ère écologique (avec Nicolas Hulot), Paris, Tallandier</li>
+                <li> 2007 : Où va le monde ?, Paris, L'Herne</li>
+                <li> 2007 : Vers l'abîme, Paris, L'Herne</li>
+                <li> 2008 : Mon chemin (entretien avec Djénane Kareh Tager), Paris, Fayard</li>
+                <li> 2008 : Vive la politique ? (avec Claude Lefort), Grenoble, Forum Libération de Grenoble</li>
+                <li> 2008 : La Méthode, coffret des six volumes en deux tomes, Paris, Le Seuil</li>
+                <li> 2009 : Crises, Paris, Éditions du CNRS</li>
+                <li> 2009 : La Pensée tourbillonnaire, Paris, Éditions Germina</li>
+                <li> 2009 : Edwige, l'inséparable, Paris, Fayard</li>
+                <li> 2009 : Au-delà du développement. Pour une politique de l'humanité ? [sous la dir. de], Paris, Atlantique</li>
+                <li> 2010 : Pour et contre Marx, Paris, Temps présent79 ; réédition : Paris, Flammarion, 2012</li>
+                <li> 2010 : Ma gauche, Paris, Éditions François Bourin</li>
+                <li> 2010 : Comment vivre en temps de crise ? (avec Patrick Viveret), Paris, Bayard</li>
+                <li> 2010 : Regards sur le sport, Paris, Le Pommier / INSEP </li>
+                <li> 2011 : La Voie : pour l'avenir de l'humanité, Paris, Fayard</li>
+                <li> 2011 : Rendre la terre habitable (avec Peter Sloterdijk), Paris, Pluriel</li>
+                <li> 2011 : Conversation pour l'avenir (avec Gilles Vanderpooten), Paris, L'Aube</li>
+                <li> 2011 : Dialogue sur la connaissance : Entretiens avec des lycéens, Paris, L'Aube</li>
+                <li> 2011 : Le philosophe indiscipliné, Paris, Le Monde, Hors série</li>
+                <li> 2011 : Mes philosophes, Paris, Germina, 2011 ; réédition : Paris, Fayard, 2013</li>
+                <li> 2011 : Le Chemin de l'espérance (avec Stéphane Hessel), Paris, Fayard</li>
+                <li> 2012 : Le Monde n'a plus de Temps à perdre, Paris, LLL</li>
+                <li> 2012 : La France est une et multiculturelle. Lettre aux citoyens de France, Paris, Fayard</li>
+                <li> 2012 : Journal (1962-1987), Paris, Le Seuil</li>
+                <li> 2012 : Journal (1992-2010), Paris, Le Seuil</li>
+                <li> 2012 : Dialogue sur la politique : la gauche et la crise (avec François Hollande), Paris, L'Aube</li>
+                <li> 2013 : Mon Paris, ma mémoire, Paris, Fayard</li>
+                <li> 2014 : Notre Europe : Décomposition ou métamorphose(avec Mauro Ceruti), Paris, Fayard</li>
+                <li> 2014 : Au péril des idées (avec Tariq Ramadan), Paris, Presses du Châtelet</li>
+                <li> 2014 : Enseigner à vivre. Manifeste pour changer l’éducation, Paris, Actes Sud-Play Bac Éditions</li>
+                <li> 2015 : Avant, pendant, après le 11 janvier (avec Patrick Singaïny), Paris, L'Aube</li>
+                <li> 2015 : Qui est Daech ? Paris, Éditions Philippe Rey</li>
+                <li> 2015 : Impliquons-nous ! Dialogue pour le siècle (avec Michelangelo Pisto), Paris, Actes Sud</li>
+                <li> 2015 : Penser global : L'humain et son univers, Paris, Robert Laffont</li>
+                <li> 2015 : L'aventure de la méthode, Paris, Le Seuil</li>
+                <li> 2016 : Pour l'esthétique, Paris, Robert Laffont</li>
+                <li> 2016 : Pour une crisologie, Paris, L'Herne</li>
+                <li> 2016 : Écologiser l'Homme, Paris, Lemieux Éditeur</li>
+                <li> 2017 : Connaissance, Ignorance, Mystère, Paris, Fayard</li>
+                <li> 2017 : L’Île de Luna (roman), Paris, Actes sud</li>
+                <li> 2017 : L'Urgence et l'Essentiel (avec Tariq Ramadan), Paris, Éditions Don Quichotte</li>
+                <li> 2017 : Le temps est venu de changer de civilisation (avec Denis Lafay), Paris, L'Aube</li>
+                <li> 2017 : Où est passé le peuple de gauche ?, Paris, L'Aube, 201780</li>
+                <li> 2017 : Ce que fut le communisme, Paris, L'Aube</li>
+                <li> 2018 : Pour résister à la régression, Paris, L'Aube</li>
+                <li> 2018 : Le Cinéma : Un art de la complexité, Paris, Nouveau Monde Éditions81</li>
+                <li> 2018 : Poésies du métropolitain, Paris, Descartes & Cie</li>
+                <li> 2019 : La Marseillaise, Paris, L'Aube</li>
+                <li> 2019 : La Fraternité, pourquoi ?, Paris, L'Aube</li>
+                <li> 2019 : Chronique d'un été (avec Jean Rouch), Paris, L'Aube</li>
+                <li> 2019 : Les souvenirs viennent à ma rencontre, Paris, Fayard82,83</li>
+                <li> 2020 : Quelle école voulons-nous ? La Passion du savoir, Paris, Odile Jacob</li>
+                <li> 2020 : Sur la crise : Pour une crisologie suivi de Où va le monde ?, Paris, Éditions Flammarion</li>
+                <li> 2020 : Changeons de voie : Les leçons du coronavirus, Paris, Denoël84</li>
+                <li> 2020 : L'entrée dans l'ère écologique, Paris, L'Aube85</li>
+                <li> 2021 : Frères d'âme (entretien avec Pierre Rabhi sur des questions de Denis Lafay), Paris, L'Aube</li>
+                <li> 2021 : Leçons d’un siècle de vie, Paris, Denoël</li>
+                <li> 2022 : Réveillons-nous !, Paris, Éditions Denoël</li>
+                <li> 2023 : Encore un moment…, Paris, Denoël</li>
+                <li> 2023 : Mon ennemi c'est la haine, dialogues avec V. Châter et JC Perrier, Paris, L'Aube</li>
+                <li> 2023 : Edgar Morin : les cent premières années, Collection : Colloque de Cerisy, 352 p</li>
+                <li> 2024 : Cheminer vers l'essentiel, Albin Michel</li>
+              
+      
+              
+                <p>
+                    <h3 class="subsection-title">Filmographie : 
+                    </h3>
+                </p>
+                
+                
+                <li>1961 : Chronique d'un été, coréalisé avec Jean Rouch</li>
+                <li> 1964 : L'Heure de la vérité d'Henri Calef, scénario d'Edgar Morin</li>
+                <li> 1966 : Un certain regard. Le cinéma vérité, d'Edgar Morin(ORTF)</li>
+                <li> 2004 : Regard sur Edgar, entretiens thématiques accordés à Samuel Thomas</li>
+                <li> 2008 : Edgar Morin, un penseur planétaire., réalisé par Jeanne Mascolo de Filippis</li>
+                <li> 2009 : Nous resterons sur Terre, film environnemental </li>
+                <li> 2010 : Regards sur le sport : Edgar Morin, sociologue, INSEP, Paris, 2010, 110 min</li>
+                <li> 2014 : Edgar Morin, chronique d'un regard, coréalisé par Céline Gailleurd et Olivier Bohler</li>
+                <li> 2017 : Enseignez à vivre ! Edgar Morin et l’éducation innovante, Abraham Ségal, 90 minutes</li>
+                <p>
+                    <h3 class="subsection-title">Interventions vidéos :</h3>
+
+<p>
+    Le défi de la complexité - Edgar Morin, à l'USI : 
+   <li> <a href="https://www.youtube.com/watch?v=6UT57Jm371w" target="_blank">https://www.youtube.com/watch?v=6UT57Jm371w</a></li>
+</p>
+<p>
+    Edgar Morin réagit à la montée de l'extrême droite : 
+    <li><a href="https://www.youtube.com/watch?v=zYWdXzs_xDk" target="_blank">https://www.youtube.com/watch?v=zYWdXzs_xDk</a></li>
+</p>
+<p>
+    Edgar Morin, "Cheminer vers l’essentiel" : Ce que résister veut dire - La Grande Librairie : 
+   <li> <a href="https://www.youtube.com/watch?v=yO1OrjynIEY" target="_blank">https://www.youtube.com/watch?v=yO1OrjynIEY</a></li>
+</p>
+<p>
+    Edgar Morin - Amour, poésie, sagesse : 
+  <li> <a href="https://www.youtube.com/watch?v=dfSFGMBSWvg" target="_blank">https://www.youtube.com/watch?v=dfSFGMBSWvg</a></li> 
+</p>
+<p>
+    Edgar Morin - Pour une refondation de la pensée politique : 
+    <li>  <a href="https://www.youtube.com/watch?v=NySdWxT0B2Y" target="_blank">https://www.youtube.com/watch?v=NySdWxT0B2Y</a></li> 
+</p>
+<p>
+    Edgar Morin : "Je souhaite que les pays africains n'oublient pas leur culture" • FRANCE 24 : 
+    <li> <a href="https://www.youtube.com/watch?v=oT3lFPC3_2U" target="_blank">https://www.youtube.com/watch?v=oT3lFPC3_2U</a></li> 
+</p>
+<p>
+    Edgar Morin | De l'importance de la lecture : 
+    <li>  <a href="https://www.youtube.com/watch?v=PO3CFsOxelc" target="_blank">https://www.youtube.com/watch?v=PO3CFsOxelc</a></li> 
+</p>
+<p>
+    Edgar Morin, philosophe à l'état sauvage : 
+    <li> <a href="https://www.youtube.com/watch?v=U3GKdgvBsU4" target="_blank">https://www.youtube.com/watch?v=U3GKdgvBsU4</a></li> 
+</p>
+<p>
+    Edgar Morin : l'homme du siècle ! - C à Vous : 
+    <li>  <a href="https://www.youtube.com/watch?v=H5zvHWNIyGw" target="_blank">https://www.youtube.com/watch?v=H5zvHWNIyGw</a></li> 
+</p>
+<p>
+    Clique x Edgar Morin : 
+    <li> <a href="https://www.youtube.com/watch?v=lqG4_Z_gPLE" target="_blank">https://www.youtube.com/watch?v=lqG4_Z_gPLE</a></li> 
+</p>
+<p>
+    Edgar Morin : une heure en tête-à-tête : 
+    <li> <a href="https://www.youtube.com/watch?v=5sRwjMFZfoM" target="_blank">https://www.youtube.com/watch?v=5sRwjMFZfoM</a></li> 
+</p>
+
+        </div>
+    </section>
+
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.getElementById("carousel-images");
+            const totalSlides = slides.children.length;
+            currentIndex = (index + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+    </script>
+
+</body>
+</html>
